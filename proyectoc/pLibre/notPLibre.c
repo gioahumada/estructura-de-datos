@@ -7,7 +7,11 @@ struct TV {
 };
 
 int buscarCanal(struct TV **array, int tam, int buscar) {
-    
+    int i;
+
+    for(i = 0;i<tam;i++) {
+        
+    }
 }
 
 int main() {
