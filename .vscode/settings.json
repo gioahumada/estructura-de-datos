@@ -2,6 +2,13 @@
     "files.associations": {
         "*.embeddedhtml": "html",
         "_stdio.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "string.h": "c",
+        "_null.h": "c",
+        "availability.h": "c",
+        "cdefs.h": "c",
+        "_types.h": "c",
+        "_size_t.h": "c",
+        "strings.h": "c"
     }
 }
