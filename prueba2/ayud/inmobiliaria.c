@@ -16,6 +16,7 @@ struct Proyecto {
 struct Casa {
     int codigo;
     char *descripcion;
+    char *dueño;
 };
 
 struct Cliente {

@@ -56,13 +56,15 @@ int eliminarNodo(struct NodoCasa **head, int buscar) {
         return 0;
     }
 
-    if(temp->ant = NULL) {
+    if(temp->ant == NULL) {
         *head = temp->sig;
     } else temp->ant->sig = temp->sig;
 
     if(temp->sig != NULL) {
         temp->sig->ant = temp->ant;
     }
+
+    return 1;
 }
 
 void leerDatos(struct NodoCasa *head) {
@@ -78,8 +80,14 @@ int main() {
     agregarAlUltimo(&head, crearCasa(1, "Las Codornices", "Blanco"));
     agregarAlUltimo(&head, crearCasa(2, "Copiapo", "Negro"));
     agregarAlUltimo(&head, crearCasa(3, "Calle Falsa", "Rojo"));
+    agregarAlUltimo(&head, crearCasa(4, "Calle Verde", "Amarillo"));
+    agregarAlUltimo(&head, crearCasa(5, "Grove Street", "Verde"));
 
     leerDatos(head);
+
+    eliminarNodo(&head, 1);
+
+    leerDatos(head);,
 
     return 0;
 
